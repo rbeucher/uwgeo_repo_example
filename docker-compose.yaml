@@ -4,10 +4,9 @@ services:
     underworld:
         container_name: underworld
         build:
-          context: $PWD
-          dockerfile: Dockerfile
+            context: $PWD
+            dockerfile: Dockerfile
         hostname: "uw-container"
-        image: uw-model:latest
         volumes: 
           - $PWD:/workspace/user_data
         working_dir: /workspace/user_data
